@@ -85,4 +85,10 @@ object SpotifyAnalysis extends App {
     case (name, followers) => val followersFormatted = followers.toString.reverse.grouped(3).mkString(",").reverse
     println(s"$name: $followersFormatted")
   }
+    // Print date and time and name
+  // get current date and time
+  val currentDateTime = java.time.LocalDateTime.now
+  println(s"\nDate and Time: $currentDateTime")
+  println("Name: Vishnu Rao-Sharma")
 }
+
