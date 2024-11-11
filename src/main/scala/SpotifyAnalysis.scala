@@ -31,7 +31,8 @@ object SpotifyAnalysis extends App {
 
   // Initialize HTTP client
   implicit val backend = HttpURLConnectionBackend()
-
+  
+  // use spotify API to get Playlist info
   def getPlaylistData(): List[Track] = {
     val playlistRequest = basicRequest
       .get(uri"https://api.spotify.com/v1/playlists/$playlistId/tracks")
@@ -47,7 +48,7 @@ object SpotifyAnalysis extends App {
         List.empty
     }
   }
-
+  // use spotify API to get artist info for follower count
   def getArtistData(artistId: String): Option[ArtistDetails] = {
     val artistRequest = basicRequest
       .get(uri"https://api.spotify.com/v1/artists/$artistId")
