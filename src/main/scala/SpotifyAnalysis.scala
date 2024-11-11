@@ -10,7 +10,7 @@ Author: Vishnu Rao-Sharma
 
 object SpotifyAnalysis extends App {
   // Spotify stuff
-  val accessToken = "BQCODLTdAjr-i70jquuzBSgn9O4_zOPxfvEWwQGiZi55HXTh0UH4w8Ams-LrElxGmmBq1gYPxJ7_lOqUQ3wVIeK0dHBJWgSWyrU9Vr9ciA3jxe2-4kQ"
+  val accessToken = ""
   val playlistId = "5Rrf7mqN8uus2AaQQQNdc1"
 
   // Tuples for JSON parsing
